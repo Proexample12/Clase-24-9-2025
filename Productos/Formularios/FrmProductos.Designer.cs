@@ -1,6 +1,6 @@
 ﻿namespace Productos
 {
-    partial class Form1
+    partial class FrmProductos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -123,11 +123,11 @@
             this.dgvRegistros.TabIndex = 8;
             this.dgvRegistros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRegistros_CellContentClick);
             // 
-            // Form1
+            // FrmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(492, 463);
+            this.ClientSize = new System.Drawing.Size(1588, 587);
             this.Controls.Add(this.dgvRegistros);
             this.Controls.Add(this.btRegistrar);
             this.Controls.Add(this.chkIva);
@@ -137,7 +137,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FrmProductos";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistros)).EndInit();
             this.ResumeLayout(false);

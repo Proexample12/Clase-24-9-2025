@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace Productos
 {
-    public partial class Form1 : Form
+    public partial class FrmProductos : Form
     {
         ProductoDao dao = new ProductoDao();
-        public Form1()
+        public FrmProductos()
         {
             InitializeComponent();
             LlenarGrid();

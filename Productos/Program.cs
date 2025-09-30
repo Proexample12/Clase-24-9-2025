@@ -16,7 +16,19 @@ namespace Productos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            using (Login login = new Login())
+            {
+                if (login.ShowDialog() == DialogResult.OK)
+                {
+                    Application.Run(new FrmPrincipal());
+                }
+                else
+                {
+                    
+                    MessageBox.Show("Inicio de sesión cancelado o fallido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+          
         }
     }
 }
