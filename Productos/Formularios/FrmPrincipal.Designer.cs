@@ -35,6 +35,8 @@
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblFecha = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.edadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.edadesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.lblFecha.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +46,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
-            this.catalogoToolStripMenuItem});
+            this.catalogoToolStripMenuItem,
+            this.edadesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
@@ -62,14 +65,15 @@
             // sAlirToolStripMenuItem
             // 
             this.sAlirToolStripMenuItem.Name = "sAlirToolStripMenuItem";
-            this.sAlirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sAlirToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
             this.sAlirToolStripMenuItem.Text = "Salir";
             this.sAlirToolStripMenuItem.Click += new System.EventHandler(this.sAlirToolStripMenuItem_Click);
             // 
             // catalogoToolStripMenuItem
             // 
             this.catalogoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.productosToolStripMenuItem});
+            this.productosToolStripMenuItem,
+            this.edadesToolStripMenuItem1});
             this.catalogoToolStripMenuItem.Name = "catalogoToolStripMenuItem";
             this.catalogoToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.catalogoToolStripMenuItem.Text = "Catalogo";
@@ -98,6 +102,20 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(47, 20);
             this.toolStripStatusLabel1.Text = "Fecha";
             this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
+            // 
+            // edadesToolStripMenuItem
+            // 
+            this.edadesToolStripMenuItem.Name = "edadesToolStripMenuItem";
+            this.edadesToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+            this.edadesToolStripMenuItem.Text = "Edades";
+            this.edadesToolStripMenuItem.Click += new System.EventHandler(this.edadesToolStripMenuItem_Click);
+            // 
+            // edadesToolStripMenuItem1
+            // 
+            this.edadesToolStripMenuItem1.Name = "edadesToolStripMenuItem1";
+            this.edadesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.edadesToolStripMenuItem1.Text = "Edades";
+            this.edadesToolStripMenuItem1.Click += new System.EventHandler(this.edadesToolStripMenuItem1_Click);
             // 
             // FrmPrincipal
             // 
@@ -128,5 +146,7 @@
         private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
         private System.Windows.Forms.StatusStrip lblFecha;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripMenuItem edadesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem edadesToolStripMenuItem;
     }
 }

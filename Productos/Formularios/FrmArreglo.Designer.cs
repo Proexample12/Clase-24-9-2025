@@ -64,6 +64,8 @@
             this.tbEdad.Name = "tbEdad";
             this.tbEdad.Size = new System.Drawing.Size(100, 22);
             this.tbEdad.TabIndex = 1;
+            this.tbEdad.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbEdad_KeyDown);
+            this.tbEdad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbEdad_KeyPress);
             // 
             // lbEdades
             // 
