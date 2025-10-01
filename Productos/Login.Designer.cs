@@ -76,7 +76,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(117, 137);
+            this.btnLogin.Location = new System.Drawing.Point(108, 163);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(181, 47);
             this.btnLogin.TabIndex = 4;
@@ -87,7 +87,7 @@
             // chkShowPw
             // 
             this.chkShowPw.AutoSize = true;
-            this.chkShowPw.Location = new System.Drawing.Point(282, 123);
+            this.chkShowPw.Location = new System.Drawing.Point(268, 137);
             this.chkShowPw.Name = "chkShowPw";
             this.chkShowPw.Size = new System.Drawing.Size(146, 20);
             this.chkShowPw.TabIndex = 5;
