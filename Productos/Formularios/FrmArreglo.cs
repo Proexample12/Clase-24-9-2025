@@ -30,17 +30,36 @@ namespace Productos.Formularios
                 Agregar();
             }
         }
+        
         private void Agregar()
         {
-            EdadesDao.edades[EdadesDao.pos++] = int.Parse(tbEdad.Text);
-            mostrarEdades();
+            int edad=0;
+            try
+            {
+
+                edad = int.Parse(tbEdad.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("no se permiten letras solo numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            try
+            {
+                EdadesDao.edades[EdadesDao.pos++] = edad;
+            }
+            catch (IndexOutOfRangeException)
+            {
+                MessageBox.Show("No se pueden agregar mas edades", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             tbEdad.Clear();
             tbEdad.Focus();
             mostrarEdades();
         }
-
+         
         public void mostrarEdades()
-        {
+        {   
             lbEdades.DataSource = null;
             lbEdades.DataSource= EdadesDao.edades;
             lbEdades.Refresh();
@@ -50,6 +69,21 @@ namespace Productos.Formularios
         private void tbEdad_KeyPress(object sender, KeyPressEventArgs e)
         {
 
+        }
+
+        private void tbEdad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblPromedio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Agregar();
         }
     }
 }
